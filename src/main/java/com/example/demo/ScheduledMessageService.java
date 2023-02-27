@@ -26,7 +26,7 @@ public class ScheduledMessageService {
         LOG.error("sendMessage() triggered!");
         final String time = new SimpleDateFormat("HH:mm").format(new Date());
         simpMessagingTemplate.convertAndSend("/topic/messages",
-                new OutputMessage("Luke Shartwalker", " is the best!", time));
+                new OutputMessage("Grodan Boll", "I'm a green frog.", time));
     }
 
 }
